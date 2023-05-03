@@ -13,22 +13,22 @@
 </head>
 <body>
 <header>
-    <h1 class="text-center pt-4">Enter a text and the word to censor!</h1>
+    <h1 class="text-center pt-4">enter a text and the word to censor!</h1>
 </header>
 
-<form action="second_page.php" method="POST" class="pt-5 mx-5">
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a comment here" name="text" id="text" style="height: 100px"></textarea>
-        <label for="text">enter your text!</label>
-    </div>
-
-    <div class="mt-5">
-        <label for="text">enter the word to be censored!</label>
-        <input class="form-control" name='word'>
-    </div>
-
-    <input type="submit" value="click me!" class="mt-3">
-</form>
+<main>
+    <form action="second_page.php" method="POST" class="pt-5 mx-5">
+        <div class="form-floating">
+            <textarea class="form-control" name="text" id="text" style="height: 100px"></textarea>
+            <label for="text">enter your text!</label>
+        </div>
+        <div class="mt-5">
+            <label for="word" class="form-label">enter the word to be censored!</label>
+            <input type="text" class="form-control" name="word" id="word" placeholder="word censored">
+        </div>
+        <button type="submit" class="btn btn-outline-dark mt-5 fs-2">click me!</button>
+    </form>
+</main>
     
 </body>
 </html>

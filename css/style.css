@@ -3,5 +3,16 @@
 }
 
 body {
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    background-image:
+        linear-gradient(to left,
+            transparent 0px,
+            transparent 20px,
+            rgba(0, 0, 0, 0.08) 20px,
+            rgba(0, 0, 0, 0.08) 40px),
+        linear-gradient(to bottom,
+            transparent 0px,
+            transparent 20px,
+            rgba(0, 0, 0, 0.08) 20px,
+            rgba(0, 0, 0, 0.08) 40px);
+    background-size: 40px 40px;
 }

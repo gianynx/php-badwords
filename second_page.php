@@ -22,16 +22,17 @@ if (isset($_POST['text'])) {
     <title>Second Page</title>
 </head>
 <body>
-<h1>
-    <p>
-        <?php echo $paragraph ?>
-        <span>text length: <?php echo $length ?></span>
-    </p>
-    <p>
-        <?php  echo str_replace($word, '***', $paragraph) ?>
-        <span>text length: <?php echo $length ?></span>
-    </p>
-</h1>
-    
+    <div class="container">
+        <div class="fs-1 mt-5">
+            <h2>text :</h2>
+            <p class="fw-bold"><?php echo $paragraph ?></p>
+            <div class="small">text length: <?php echo $length ?></div>
+        </div>
+        <div class="fs-1 mt-5">
+            <h2>word censored :</h2>
+            <p class="fw-bold"><?php echo str_replace($word, '***', $paragraph) ?></p>
+            <div class="small">text length: <?php echo $length ?></div>
+        </div>
+    </div>
 </body>
 </html>
