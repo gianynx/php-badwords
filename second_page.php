@@ -1,5 +1,8 @@
 <?php
 $length = 0;
+/*
+Il controllo con isset($_POST['text']) serve a verificare se è stato inviato un valore tramite un form HTML con il nome 'text'. Se è stato inviato, il codice all'interno del blocco if viene eseguito.
+*/
 if (isset($_POST['text'])) {
     $paragraph = trim($_POST['text']);
     $word = trim($_POST['word']);
