@@ -30,6 +30,7 @@ if (isset($_POST['text'])) {
         </div>
         <div class="fs-1 mt-5">
             <h2>word censored :</h2>
+            <!-- str_replace(porzioneDaModificare, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore -->
             <p class="fw-bold"><?php echo str_replace($word, '***', $paragraph) ?></p>
             <div class="small">text length: <?php echo $length ?></div>
         </div>
